@@ -11,9 +11,11 @@ public class Exercise4 {
 		
 		private int count = 0;
 		
-		public int increment() {
-			return ++count;
-		}
+		//public int increment() {// This can create race situation if the 						//program calls it multiple times from 						//different locations
+		//	return ++count;
+	//	}
+
+	static synchronized int increment() {// synchronized method for thread safe 			return ++count;}     		
 		
 		public int getCount() {
 			return count;
