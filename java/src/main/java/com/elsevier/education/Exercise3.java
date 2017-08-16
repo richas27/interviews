@@ -3,13 +3,8 @@ package com.elsevier.education;
 import java.util.*;
 
 /**
-
-TODO Examine the failing test case for this class.
- We should be able to call people.add() twice but end with only one object in it.
- We can test with "gradlew test"
-
-*/
-public class Exercise3 {
+I*/
+public class Exercise3
 
 	public static class Person {
 	
@@ -29,3 +24,5 @@ public class Exercise3 {
 		}
 	}
 }
+
+// The test would pass as we are passing same value twice and since this is a  set,only one value will exist and the assert statement will be true
